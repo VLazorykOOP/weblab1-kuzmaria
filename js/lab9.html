@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Медіа-бібліотека Аптеки</title>
+    <link rel="stylesheet" href="styles4.css" />
+    <style>
+      body {
+        font-family: Tahoma, sans-serif;
+      }
+      .menu,
+      .media-item {
+        margin: 20px;
+        padding: 10px;
+        background-color: #f2f2f2;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Медіа-бібліотека Аптеки</h1>
+
+    <!-- Меню для навігації по медіа-бібліотеці -->
+    <form class="menu" id="mediaMenu" method="get">
+      <label for="search">Пошук медіа:</label>
+      <input type="text" id="search" name="search" placeholder="Введіть назву або тему" />
+
+      <label for="mediaType">Тип медіа:</label>
+      <select id="mediaType" name="mediaType">
+        <option value="all">Усі</option>
+        <option value="audio">Аудіо</option>
+        <option value="video">Відео</option>
+      </select>
+
+      <button type="submit">Знайти</button>
+      <button type="reset">Скинути</button>
+    </form>
+
+    <!-- Приклад аудіо ресурсу -->
+    <div class="media-item">
+      <h2>Інформаційний аудіо: Здоров'я та ліки</h2>
+      <audio controls>
+        <source src="audio/Панас Буйний - Щастя, Здоров’я, Многая Літа.mp3" type="audio/mpeg" />
+        Ваш браузер не підтримує відтворення аудіо.
+      </audio>
+    </div>
+
+    <!-- Приклад відео ресурсу -->
+    <div class="media-item">
+      <h2>Інформаційне відео: Інструкція до препаратів</h2>
+      <iframe
+        width="500"
+        height="300"
+        src="https://www.youtube.com/embed/l_VXxbJFE3w"
+        title="Інструкція до препаратів"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </body>
+</html>
